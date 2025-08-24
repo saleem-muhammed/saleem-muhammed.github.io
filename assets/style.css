@@ -1,4 +1,18 @@
 :root{
+  --bg:#0b1020;
+  --fg:#e6ecff;
+  --muted:#a1a9c6;
+  --link:#7dd3fc;
+  --accent:#60a5fa;
+  --card:#121936;
+  --code:#0f1630;
+  --border:#27314f;
+  --maxw:980px;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+/* Light mode fallback; JS switches .dark/.light on <html> */
+html.light{
   --bg:#ffffff;
   --fg:#0f172a;
   --muted:#475569;
@@ -7,37 +21,79 @@
   --card:#f8fafc;
   --code:#f1f5f9;
   --border:#e2e8f0;
-  --maxw:880px;
+  --shadow: 0 10px 30px rgba(2,6,23,.07);
 }
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;color:var(--fg);background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.6}
 a{color:var(--link);text-decoration:none}
 a:hover{text-decoration:underline}
-header{border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:10}
-.nav{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:24px;padding:14px 20px}
-.nav .brand{font-weight:700;letter-spacing:.2px}
+
+header{border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;background:var(--bg);backdrop-filter:saturate(120%) blur(6px)}
+.nav{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:20px;padding:14px 20px}
+.nav .brand{font-weight:800;letter-spacing:.2px}
 .nav a{color:var(--fg)}
 .nav .spacer{flex:1}
 .nav .menu a{margin-left:16px}
-main{max-width:var(--maxw);margin:30px auto;padding:0 20px}
-.hero{display:grid;gap:6px;margin:10px 0 24px 0}
+.toggle{
+  display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);
+  padding:8px 12px;border-radius:999px;background:transparent;color:var(--fg);cursor:pointer
+}
+
+main{max-width:var(--maxw);margin:36px auto;padding:0 20px}
 h1{font-size:2rem;margin:.2rem 0}
-h2{font-size:1.35rem;margin:1.5rem 0 .5rem}
+h2{font-size:1.35rem;margin:1.5rem 0 .75rem}
 h3{font-size:1.1rem;margin:1.25rem 0 .35rem}
-.card{background:var(--card);border:1px solid var(--border);padding:16px 16px;border-radius:14px}
-.grid{display:grid;gap:14px}
+
+.grid{display:grid;gap:18px}
 .grid-2{grid-template-columns:1fr}
+@media (min-width:900px){ .grid-2{grid-template-columns:1.1fr .9fr} }
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:20px;
+  border-radius:18px;
+  box-shadow: var(--shadow);
+}
+
 ul{padding-left:1.1rem;margin-top:.25rem}
-.badge{display:inline-block;background:var(--code);border:1px solid var(--border);padding:2px 8px;border-radius:999px;font-size:.85rem;margin-right:6px}
+.badge{display:inline-block;background:var(--code);border:1px solid var(--border);
+  padding:4px 10px;border-radius:999px;font-size:.85rem;margin-right:6px}
+
 footer{max-width:var(--maxw);margin:40px auto 60px;padding:0 20px;color:var(--muted);font-size:.95rem}
+
 hr{border:none;border-top:1px solid var(--border);margin:26px 0}
 code,kbd{background:var(--code);padding:.1rem .35rem;border-radius:6px;border:1px solid var(--border)}
 pre{background:var(--code);padding:12px;border-radius:8px;overflow:auto;border:1px solid var(--border)}
+
 table{width:100%;border-collapse:collapse}
-td,th{padding:8px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
-.download{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:#fff;padding:10px 14px;border-radius:12px}
+td,th{padding:10px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+
+.download{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);
+  background:transparent;padding:10px 14px;border-radius:12px}
+
 .small{font-size:.95rem;color:var(--muted)}
-@media (min-width:880px){
-  .grid-2{grid-template-columns:1.2fr .8fr}
+
+.hero{
+  display:grid;gap:8px;margin:6px 0 20px 0
 }
+
+/* Profile card */
+.profile{
+  display:flex;gap:18px;align-items:center;flex-wrap:wrap
+}
+.profile img{
+  width:120px;height:120px;object-fit:cover;border-radius:50%;
+  border:2px solid var(--border);box-shadow: var(--shadow)
+}
+.profile .who{display:grid;gap:6px}
+
+/* Fancy link buttons */
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);
+  background:transparent;padding:10px 14px;border-radius:14px;text-decoration:none
+}
+.btn:hover{transform:translateY(-1px)}
 
