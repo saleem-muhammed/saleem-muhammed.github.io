@@ -97,3 +97,16 @@ td,th{padding:10px;border-bottom:1px solid var(--border);text-align:left;vertica
 }
 .btn:hover{transform:translateY(-1px)}
 
+/* Hero typography tweaks */
+.name{
+  font-size: clamp(2.2rem, 3.2vw + 1rem, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 4px 0;
+}
+.role{
+  font-size: 1.05rem;   /* smaller than the big name */
+  color: var(--muted);
+  margin: 2px 0 6px 0;
+}
+
