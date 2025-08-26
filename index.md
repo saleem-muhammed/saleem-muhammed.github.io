@@ -24,7 +24,7 @@ permalink: /
 </div>
 
 ## About
-I am a postdoctoral fellow at UT Austin’s Weinberg Institute, working at the intersection of gravitational-wave astronomy, data analysis, and machine learning. My research spans population inference and tests of general relativity, real-time denoising and pipelines for GW detectors, and multi-messenger studies of compact objects.
+I am a researcher interested in the consequences of gravitational-wave observations from the 2nd  and 3rd generation interferometers. My area of research spans tests of Einstein's general relativity, multimessenger studies of compact objects, detection and characterization of stochastic gravitational wave background from binary black holes, and development of novel data analysis methods including machine learning for applications such as data denoising. My research spans population inference and tests of general relativity, real-time denoising and pipelines for GW detectors, and multi-messenger studies of compact objects.
 
 *Previously: Postdoctoral Associate at the University of Minnesota; Visiting Fellow at Chennai Mathematical Institute; Research Associate at IIT Bombay.*
 
