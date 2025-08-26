@@ -8,7 +8,6 @@
     html.classList.add(mode);
     html.setAttribute('data-palette', palette);
 
-    // Update UI
     document.querySelectorAll('[data-theme-label]').forEach(el=>{
       el.textContent = mode === 'dark' ? 'Dark' : 'Light';
     });
@@ -34,7 +33,6 @@
     apply(localStorage.getItem('mode') || (prefersDark?'dark':'light'), value);
   }
 
-  // Init + wire up
   document.addEventListener('DOMContentLoaded', () => {
     load();
     document.querySelectorAll('[data-theme-toggle]').forEach(btn=>{

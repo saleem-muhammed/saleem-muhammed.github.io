@@ -1,162 +1,62 @@
-/* ===============================
-   Global theme (dark default)
-   html.light overrides for light mode
-   =============================== */
-:root{
-  --bg:#0b1020;
-  --fg:#e6ecff;
-  --muted:#a1a9c6;
-  --link:#7dd3fc;
-  --accent:#60a5fa;
-  --card:#121936;
-  --code:#0f1630;
-  --border:#27314f;
-  --maxw:980px;
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
-}
+/* ==== Palettes (Austin/Teal/Nord) ==== */
+html.dark[data-palette="austin"]{ --bg:#0f1115; --fg:#f5f7ff; --muted:#c3c8da; --link:#ffb37a; --accent:#bf5700; --card:#151926; --code:#111522; --border:#293041; --maxw:980px; --shadow:0 10px 30px rgba(0,0,0,.35); }
+html.light[data-palette="austin"]{ --bg:#ffffff; --fg:#0b0f19; --muted:#55607a; --link:#bf5700; --accent:#bf5700; --card:#f7f8fb; --code:#edf2f7; --border:#e3e7ee; --shadow:0 10px 30px rgba(2,6,23,.07); }
 
-html.light{
-  --bg:#ffffff;
-  --fg:#0f172a;
-  --muted:#475569;
-  --link:#0ea5e9;
-  --accent:#0ea5e9;
-  --card:#f8fafc;
-  --code:#f1f5f9;
-  --border:#e2e8f0;
-  --shadow: 0 10px 30px rgba(2,6,23,.07);
-}
+html.dark[data-palette="teal"]{ --bg:#0b0f14; --fg:#e9eef8; --muted:#a8b0c3; --link:#5eead4; --accent:#14b8a6; --card:#121821; --code:#0f1420; --border:#263244; --maxw:980px; --shadow:0 10px 30px rgba(0,0,0,.35); }
+html.light[data-palette="teal"]{ --bg:#ffffff; --fg:#0f172a; --muted:#475569; --link:#0d9488; --accent:#0d9488; --card:#f8fafc; --code:#f1f5f9; --border:#e2e8f0; --shadow:0 10px 30px rgba(2,6,23,.07); }
 
-/* ===============================
-   Base
-   =============================== */
+html.dark[data-palette="nord"]{ --bg:#111827; --fg:#e5e9f2; --muted:#b8c1d1; --link:#88c0d0; --accent:#5e81ac; --card:#1b2432; --code:#161d2a; --border:#314055; --maxw:980px; --shadow:0 10px 30px rgba(0,0,0,.35); }
+html.light[data-palette="nord"]{ --bg:#ffffff; --fg:#2e3440; --muted:#606a7a; --link:#5e81ac; --accent:#5e81ac; --card:#f7f9fc; --code:#eef2f7; --border:#e3e7ee; --shadow:0 10px 30px rgba(2,6,23,.07); }
+
+/* default if nothing set yet */
+:root{ --bg:#0f1115; --fg:#f5f7ff; --muted:#c3c8da; --link:#ffb37a; --accent:#bf5700; --card:#151926; --code:#111522; --border:#293041; --maxw:980px; --shadow:0 10px 30px rgba(0,0,0,.35); }
+
+/* Base */
 *{box-sizing:border-box}
-html,body{
-  margin:0;
-  padding:0;
-  color:var(--fg);
-  background:var(--bg);
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
-  line-height:1.6
-}
-a{color:var(--link);text-decoration:none}
-a:hover{text-decoration:underline}
-.small{font-size:.95rem;color:var(--muted)}
-.spacer{flex:1}
+html,body{ margin:0; padding:0; color:var(--fg); background:var(--bg); font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif; line-height:1.6 }
+a{ color:var(--link); text-decoration:none }
+a:hover{ text-decoration:underline }
+.small{ font-size:.95rem; color:var(--muted) }
+.spacer{ flex:1 }
 
-/* ===============================
-   Header / Nav
-   =============================== */
-header{
-  border-bottom:1px solid var(--border);
-  position:sticky; top:0; z-index:10;
-  background:var(--bg);
-  backdrop-filter:saturate(120%) blur(6px);
-}
-.nav{
-  max-width:var(--maxw);
-  margin:0 auto;
-  display:flex; align-items:center; gap:20px;
-  padding:14px 20px
-}
-/* Hide the left brand so the bar shows only nav links + toggle */
-.nav .brand{ display:none; }
-.nav a{ color:var(--fg) }
-.nav .menu a{ margin-left:16px }
+/* Header / Nav */
+header{ border-bottom:1px solid var(--border); position:sticky; top:0; z-index:10; background:var(--bg); backdrop-filter:saturate(120%) blur(6px) }
+.nav{ max-width:var(--maxw); margin:0 auto; display:flex; align-items:center; gap:20px; padding:14px 20px }
+.nav .menu a{ margin-left:16px; color:var(--fg) }
+.toggle{ display:inline-flex; align-items:center; gap:8px; border:1px solid var(--border); padding:8px 12px; border-radius:999px; background:transparent; color:var(--fg); cursor:pointer }
+select.toggle{ border:1px solid var(--border); padding:8px 12px; border-radius:999px; background:transparent; color:var(--fg) }
+select.toggle:focus{ outline:none; box-shadow:0 0 0 2px color-mix(in oklab, var(--accent), transparent 70%) }
 
-/* Theme toggle button */
-.toggle{
-  display:inline-flex; align-items:center; gap:8px;
-  border:1px solid var(--border);
-  padding:8px 12px; border-radius:999px;
-  background:transparent; color:var(--fg); cursor:pointer
-}
+/* Layout */
+main{ max-width:var(--maxw); margin:36px auto; padding:0 20px }
+h1{ font-size:2rem; margin:.2rem 0 }
+h2{ font-size:1.35rem; margin:1.5rem 0 .75rem }
+h3{ font-size:1.1rem; margin:1.25rem 0 .35rem }
+.grid{ display:grid; gap:18px }
+.grid-2{ grid-template-columns:1fr }
+@media (min-width:900px){ .grid-2{ grid-template-columns:1.1fr .9fr } }
+.card{ background:var(--card); border:1px solid var(--border); padding:20px; border-radius:18px; box-shadow:var(--shadow) }
 
-/* ===============================
-   Layout
-   =============================== */
-main{max-width:var(--maxw); margin:36px auto; padding:0 20px}
-h1{font-size:2rem; margin:.2rem 0}
-h2{font-size:1.35rem; margin:1.5rem 0 .75rem}
-h3{font-size:1.1rem; margin:1.25rem 0 .35rem}
-
-.grid{display:grid; gap:18px}
-.grid-2{grid-template-columns:1fr}
-@media (min-width:900px){ .grid-2{grid-template-columns:1.1fr .9fr} }
-
-.card{
-  background:var(--card);
-  border:1px solid var(--border);
-  padding:20px;
-  border-radius:18px;
-  box-shadow: var(--shadow);
-}
-
-/* ===============================
-   Hero section
-   =============================== */
+/* Hero */
 .hero{ display:grid; gap:8px; margin:6px 0 20px 0 }
-
 .profile{ display:flex; gap:18px; align-items:center; flex-wrap:wrap }
-.profile img{
-  width:120px; height:120px; object-fit:cover; border-radius:50%;
-  border:2px solid var(--border); box-shadow: var(--shadow)
-}
+.profile img{ width:120px; height:120px; object-fit:cover; border-radius:50%; border:2px solid var(--border); box-shadow:var(--shadow) }
 .profile .who{ display:grid; gap:6px }
+.name{ font-size:clamp(2.2rem, 3.2vw + 1rem, 3rem); font-weight:500; line-height:1.15; margin:0 0 4px 0 }
+.role{ font-size:1.05rem; color:var(--muted); margin:2px 0 10px 0 }
 
-/* Name (large but lighter) and role */
-.name{
-  font-size: clamp(2.2rem, 3.2vw + 1rem, 3rem);
-  font-weight: 500;           /* lighter weight per request */
-  line-height: 1.15;
-  margin: 0 0 4px 0;
-}
-.role{
-  font-size: 1.05rem;
-  color: var(--muted);
-  margin: 2px 0 10px 0;
-}
-
-/* Badges */
-.badge{
-  display:inline-block;
-  background:var(--code);
-  border:1px solid var(--border);
-  padding:4px 10px;
-  border-radius:999px;
-  font-size:.85rem;
-  margin:0 6px 6px 0
-}
-
-/* Buttons */
+/* Badges & Buttons */
+.badge{ display:inline-block; background:var(--code); border:1px solid var(--border); padding:4px 10px; border-radius:999px; font-size:.85rem; margin:0 6px 6px 0 }
 .btns{ display:flex; gap:10px; flex-wrap:wrap; margin-top:6px }
-.btn{
-  display:inline-flex; align-items:center; gap:8px;
-  border:1px solid var(--border);
-  background:transparent;
-  padding:10px 14px; border-radius:14px;
-  text-decoration:none
-}
+.btn{ display:inline-flex; align-items:center; gap:8px; border:1px solid var(--border); background:transparent; padding:10px 14px; border-radius:14px; text-decoration:none }
 .btn:hover{ transform:translateY(-1px) }
 
-/* ===============================
-   Typography & blocks
-   =============================== */
+/* Tables, code blocks, footer */
 ul{ padding-left:1.1rem; margin-top:.25rem }
 table{ width:100%; border-collapse:collapse }
 td,th{ padding:10px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top }
 code,kbd{ background:var(--code); padding:.1rem .35rem; border-radius:6px; border:1px solid var(--border) }
 pre{ background:var(--code); padding:12px; border-radius:8px; overflow:auto; border:1px solid var(--border) }
 .download{ display:inline-flex; align-items:center; gap:8px; border:1px solid var(--border); background:transparent; padding:10px 14px; border-radius:12px }
-
-/* ===============================
-   Footer
-   =============================== */
-footer{
-  max-width:var(--maxw);
-  margin:40px auto 60px;
-  padding:0 20px;
-  color:var(--muted);
-  font-size:.95rem
-}
+footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(--muted); font-size:.95rem }
 
