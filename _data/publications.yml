@@ -1,34 +1,44 @@
-i- year: 2025
-  title: Progress toward the detection of the gravitational-wave background from stellar-mass binary black holes: a mock data challenge
-  url: https://arxiv.org/abs/2506.14179
 - year: 2025
-  title: Coherence DeepClean: Toward autonomous denoising of gravitational-wave detector data
-  url: https://arxiv.org/abs/2501.04883
+  title: "Progress toward the detection of the gravitational-wave background from stellar-mass binary black holes: a mock data challenge"
+  url: "https://arxiv.org/abs/2506.14179"
+
+- year: 2025
+  title: "Coherence DeepClean: Toward autonomous denoising of gravitational-wave detector data"
+  url: "https://arxiv.org/abs/2501.04883"
+
 - year: 2024
-  title: Application of Non-Linear Noise Regression in the Virgo Detector
-  url: https://arxiv.org/abs/2410.06220
+  title: "Application of Non-Linear Noise Regression in the Virgo Detector"
+  url: "https://arxiv.org/abs/2410.06220"
+
 - year: 2024
-  title: Rapid likelihood free inference of compact binary coalescences using accelerated hardware
-  url: https://iopscience.iop.org/article/10.1088/2632-2153/ad8982
+  title: "Rapid likelihood free inference of compact binary coalescences using accelerated hardware"
+  url: "https://iopscience.iop.org/article/10.1088/2632-2153/ad8982"
+
 - year: 2024
-  title: A machine-learning pipeline for real-time detection of gravitational waves from compact binary coalescences
-  url: https://arxiv.org/abs/2403.18661
+  title: "A machine-learning pipeline for real-time detection of gravitational waves from compact binary coalescences"
+  url: "https://arxiv.org/abs/2403.18661"
+
 - year: 2024
-  title: Joint GW–short GRB detection of BNS mergers with existing and future facilities
-  url: https://arxiv.org/abs/2401.13636
+  title: "Joint GW–short GRB detection of BNS mergers with existing and future facilities"
+  url: "https://arxiv.org/abs/2401.13636"
+
 - year: 2024
-  title: Effect of double spin-precession and higher harmonics on spin-induced quadrupole measurements
-  url: https://doi.org/10.1103/PhysRevD.109.023016
+  title: "Effect of double spin-precession and higher harmonics on spin-induced quadrupole measurements"
+  url: "https://doi.org/10.1103/PhysRevD.109.023016"
+
 - year: 2024
-  title: Demonstration of ML-assisted real-time noise regression in GW detectors
-  url: https://arxiv.org/abs/2306.11366
+  title: "Demonstration of ML-assisted real-time noise regression in GW detectors"
+  url: "https://arxiv.org/abs/2306.11366"
+
 - year: 2022
-  title: Parametrized tests of post-Newtonian theory using PCA
-  url: https://doi.org/10.1103/PhysRevD.105.084062
+  title: "Parametrized tests of post-Newtonian theory using PCA"
+  url: "https://doi.org/10.1103/PhysRevD.105.084062"
+
 - year: 2022
-  title: Population inference of spin-induced quadrupole moments
-  url: https://doi.org/10.1103/PhysRevD.105.104066
+  title: "Population inference of spin-induced quadrupole moments"
+  url: "https://doi.org/10.1103/PhysRevD.105.104066"
+
 - year: 2022
-  title: Hardware-accelerated Inference for Real-Time GW Astronomy
-  url: https://doi.org/10.1038/s41550-022-01651-w
+  title: "Hardware-accelerated Inference for Real-Time GW Astronomy"
+  url: "https://doi.org/10.1038/s41550-022-01651-w"
 
