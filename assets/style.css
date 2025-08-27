@@ -60,3 +60,38 @@ pre{ background:var(--code); padding:12px; border-radius:8px; overflow:auto; bor
 .download{ display:inline-flex; align-items:center; gap:8px; border:1px solid var(--border); background:transparent; padding:10px 14px; border-radius:12px }
 footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(--muted); font-size:.95rem }
 
+
+/* --- Publications tooltip --- */
+.pub { position: relative; text-decoration: none; }
+.pub:hover, .pub:focus { text-decoration: none; }
+
+.pub[data-summary]:hover::after,
+.pub[data-summary]:focus-visible::after{
+  content: attr(data-summary);
+  position: absolute;
+  left: 0; top: 100%; margin-top: .5rem;
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  padding: .6rem .8rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: min(38rem, 92vw);
+  line-height: 1.4;
+  white-space: normal;
+  z-index: 20;
+}
+.pub[data-summary]:hover::before,
+.pub[data-summary]:focus-visible::before{
+  content: "";
+  position: absolute;
+  left: .9rem; top: calc(100% + 2px);
+  border: 6px solid transparent;
+  border-bottom-color: var(--border); /* small arrow outline */
+}
+.pub[data-summary]:hover::after{ transform: translateY(0); }
+
+/* spacing for list */
+.pub-list { list-style: disc; padding-left: 1.25rem; }
+.pub-list li { margin: .6rem 0; }
+

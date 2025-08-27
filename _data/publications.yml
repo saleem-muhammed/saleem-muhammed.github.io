@@ -1,44 +1,297 @@
-- year: 2025
+- authors: "X.-X. Kou; M. Saleem; V. Mandic; C. Talbot; E. Thrane"
   title: "Progress toward the detection of the gravitational-wave background from stellar-mass binary black holes: a mock data challenge"
+  journal: "arXiv"
+  year: 2025
   url: "https://arxiv.org/abs/2506.14179"
+  summary: >-
+    Mock-data challenge for the stochastic BBH background: defines datasets and evaluation metrics, compares pipelines, and maps out sensitivity and detection prospects.
 
-- year: 2025
-  title: "Coherence DeepClean: Toward autonomous denoising of gravitational-wave detector data"
-  url: "https://arxiv.org/abs/2501.04883"
-
-- year: 2024
+- authors: "R. W. Kiendrebeogo; M. Saleem; M.-A. Bizouard; A. H. Y. Chen; N. Christensen; C.-J. Chou; M. W. Coughlin; K. Janssens; S. Z. Kam; J. Koulidiati; S.-W. Yeh"
   title: "Application of Non-Linear Noise Regression in the Virgo Detector"
+  journal: "arXiv"
+  year: 2024
   url: "https://arxiv.org/abs/2410.06220"
+  summary: >-
+    Demonstrates non-linear (ML-based) noise regression in Virgo, quantifying noise subtraction and its impact on strain sensitivity and astrophysical searches.
 
-- year: 2024
-  title: "Rapid likelihood free inference of compact binary coalescences using accelerated hardware"
+- authors: "C. Reissel; S. Soni; M. Saleem; M. Coughlin; P. Harris; E. Katsavounidis"
+  title: "Coherence DeepClean: Toward autonomous denoising of gravitational-wave detector data"
+  journal: "arXiv"
+  year: 2025
+  url: "https://arxiv.org/abs/2501.04883"
+  summary: >-
+    A coherence-driven DeepClean approach for automatic witness selection and denoising, improving robustness and readiness for autonomous online operation.
+
+- authors: "D. Chatterjee; E. Marx; W. Benoit; R. Kumar; M. Desai; E. Govorkova; A. Gunny; E. Moreno; R. Omer; R. Raikman; M. Saleem; S. Aggarwal; M. W. Coughlin; P. Harris; E. Katsavounidis"
+  title: "Rapid likelihood-free inference of compact binary coalescences using accelerated hardware"
+  journal: "Mach. Learn.: Sci. Technol."
+  volume: "5"
+  pages: "045030"
+  year: 2024
   url: "https://iopscience.iop.org/article/10.1088/2632-2153/ad8982"
+  summary: >-
+    Likelihood-free inference for CBCs on modern accelerators (GPU/FPGA/ASIC), achieving real-time or near real-time parameter estimation performance.
 
-- year: 2024
+- authors: "E. Marx; W. Benoit; A. Gunny; R. Omer; D. Chatterjee; R. C. Venterea; L. Wills; M. Saleem; E. Moreno; R. Raikman; E. Govorkova; D. Rankin; M. W. Coughlin; P. Harris; E. Katsavounidis"
   title: "A machine-learning pipeline for real-time detection of gravitational waves from compact binary coalescences"
-  url: "https://arxiv.org/abs/2403.18661"
+  journal: "Phys. Rev. D"
+  volume: "111"
+  pages: "042010"
+  year: 2025
+  url: "https://doi.org/10.1103/PhysRevD.111.042010"
+  summary: >-
+    End-to-end ML pipeline for low-latency CBC detection, demonstrating real-time throughput and low false-alarm rates on production-like data.
 
-- year: 2024
-  title: "Joint GW–short GRB detection of BNS mergers with existing and future facilities"
-  url: "https://arxiv.org/abs/2401.13636"
+- authors: "S. Bhattacharjee; S. Banerjee; V. Bhalerao; P. Beniamini; S. Bose; K. Hotokezaka; A. Pai; M. Saleem; G. Waratkar"
+  title: "Joint gravitational wave–short GRB detection of binary neutron star mergers with existing and future facilities"
+  journal: "Mon. Not. R. Astron. Soc."
+  volume: "528"
+  pages: "4255–4263"
+  year: 2024
+  url: "https://doi.org/10.1093/mnras/stae284"
+  summary: >-
+    Forecasts joint GW–sGRB detection rates for BNS across current and future observatories, quantifying multi-messenger yields and constraints.
 
-- year: 2024
-  title: "Effect of double spin-precession and higher harmonics on spin-induced quadrupole measurements"
+- authors: "Divyajyoti; N. V. Krishnendu; M. Saleem; M. Colleoni; A. Vijaykumar; K. G. Arun; C. K. Mishra"
+  title: "Effect of double spin-precession and higher harmonics on spin-induced quadrupole moment measurements"
+  journal: "Phys. Rev. D"
+  volume: "109"
+  pages: "023016"
+  year: 2024
   url: "https://doi.org/10.1103/PhysRevD.109.023016"
+  summary: >-
+    Studies how precession and higher modes impact constraints on spin-induced quadrupole moments, informing tests of the black-hole nature.
 
-- year: 2024
-  title: "Demonstration of ML-assisted real-time noise regression in GW detectors"
+- authors: "M. Saleem; A. Gunny; C.-J. Chou; L.-C. Yang; S.-W. Yeh; A. H. Y. Chen; R. Magee; W. Benoit; T. Nguyen; P. Fan; D. Chatterjee; E. Marx; E. Moreno; R. Omer; R. Raikman; D. Rankin; R. Sharma; M. Coughlin; P. Harris; E. Katsavounidis"
+  title: "Demonstration of machine-learning–assisted real-time noise regression in gravitational-wave detectors"
+  journal: "Class. Quantum Grav."
+  volume: "41"
+  pages: "195024"
+  year: 2024
   url: "https://arxiv.org/abs/2306.11366"
+  summary: >-
+    Live deployment of ML-assisted noise regression (DeepClean) on GW detectors, showing real-time noise subtraction while preserving astrophysical signals.
 
-- year: 2022
-  title: "Parametrized tests of post-Newtonian theory using PCA"
-  url: "https://doi.org/10.1103/PhysRevD.105.084062"
+- authors: "V. Bhalerao et al."
+  title: "Science with the Daksha High Energy Transients Mission"
+  journal: "Exp. Astron."
+  volume: "57"
+  pages: "23"
+  year: 2024
+  url: "https://doi.org/10.1007/s10686-024-09923-1"
+  summary: >-
+    Mission science overview for Daksha; includes rate forecasts for long/short GRBs.
+    Contribution: computed Daksha’s projected GRB detection rates.
 
-- year: 2022
-  title: "Population inference of spin-induced quadrupole moments"
+- authors: "A. Gunny; D. Rankin; P. Harris; E. Katsavounidis; E. Marx; M. Saleem; M. Coughlin; W. Benoit"
+  title: "A Software Ecosystem for Deploying Deep Learning in Gravitational Wave Physics"
+  journal: "FlexScience 22 (AI & Scientific Computing at Scale Workshop Proceedings)"
+  year: 2022
+  url: "https://doi.org/10.1145/3526058.3535454"
+  summary: >-
+    Describes a practical software stack and patterns for deploying deep learning in GW pipelines across heterogeneous compute infrastructure.
+
+- authors: "S. Datta; M. Saleem; K. G. Arun; B. S. Sathyaprakash"
+  title: "Multiparameter tests of general relativity using principal component analysis with next-generation gravitational-wave detectors"
+  journal: "Phys. Rev. D"
+  volume: "109"
+  pages: "044036"
+  year: 2024
+  url: "https://doi.org/10.1103/PhysRevD.109.044036"
+  summary: >-
+    PCA-based framework to combine multiple PN-order deviations, projecting next-gen detector networks’ ability to constrain GR violations.
+
+- authors: "M. Saleem; N. V. Krishnendu; A. Ghosh; A. Gupta; W. Del Pozzo; A. Ghosh; K. G. Arun"
+  title: "Population inference of spin-induced quadrupole moments as a probe for non–black-hole compact binaries"
+  journal: "Phys. Rev. D"
+  volume: "105"
+  pages: "104066"
+  year: 2022
   url: "https://doi.org/10.1103/PhysRevD.105.104066"
+  summary: >-
+    Hierarchical population constraints on spin-induced quadrupoles across events, probing deviations from the black-hole Kerr expectation.
 
-- year: 2022
-  title: "Hardware-accelerated Inference for Real-Time GW Astronomy"
+- authors: "M. Saleem; S. Datta; K. G. Arun; B. S. Sathyaprakash"
+  title: "Parametrized tests of post-Newtonian theory using principal component analysis"
+  journal: "Phys. Rev. D"
+  volume: "105"
+  pages: "084062"
+  year: 2022
+  url: "https://doi.org/10.1103/PhysRevD.105.084062"
+  summary: >-
+    Introduces a PCA approach to combine correlated PN-deviation parameters, improving interpretability and constraints in tests of GR.
+
+- authors: "N. K. Johnson-McDaniel; A. Ghosh; S. Ghonge; M. Saleem; N. V. Krishnendu; J. A. Clark; et al."
+  title: "Investigating the relation between gravitational-wave tests of general relativity"
+  journal: "Phys. Rev. D"
+  volume: "105"
+  pages: "044020"
+  year: 2022
+  url: "https://doi.org/10.1103/PhysRevD.105.044020"
+  summary: >-
+    Clarifies connections among different GW tests of GR and how results should be interpreted jointly.
+
+- authors: "A. Gunny; D. Rankin; J. Krupa; M. Saleem; T. Nguyen; et al."
+  title: "Hardware-accelerated inference for real-time gravitational-wave astronomy"
+  journal: "Nat. Astron."
+  volume: "6"
+  pages: "529–536"
+  year: 2022
   url: "https://doi.org/10.1038/s41550-022-01651-w"
+  summary: >-
+    Demonstrates real-time inference for GW astronomy using specialized hardware, reducing end-to-end latency by orders of magnitude.
+
+- authors: "M. Saleem; J. Rana; V. Gayathri; A. Vijaykumar; S. Goyal; S. Sachdev; J. Suresh; S. Sudhagar; A. Mukherjee; G. Gaur; B. Sathyaprakash; A. Pai; R. X. Adhikari; P. Ajith; S. Bose"
+  title: "The Science Case for LIGO-India"
+  journal: "Class. Quantum Grav."
+  volume: "39"
+  pages: "025004"
+  year: 2022
+  url: "https://doi.org/10.1088/1361-6382/ac3b99"
+  summary: >-
+    Lays out the scientific goals and network benefits of adding LIGO-India, including localization, parameter estimation, and tests of gravity.
+
+- authors: "S. R. Mohite; P. Rajkumar; S. Anand; D. L. Kaplan; M. W. Coughlin; A. Sagués-Carracedo; M. Saleem; et al."
+  title: "Inferring kilonova population properties with a hierarchical Bayesian framework I: Non-detection methodology and single-event analyses"
+  journal: "Astrophys. J."
+  volume: "925"
+  pages: "58"
+  year: 2022
+  url: "https://doi.org/10.3847/1538-4357/ac3981"
+  summary: >-
+    Develops a hierarchical framework that incorporates non-detections to infer kilonova populations; demonstrates performance on single-event analyses.
+
+- authors: "S. Mohan; M. Saleem; L. Resmi"
+  title: "Detectability of electromagnetic counterparts from neutron star mergers: prompt emission vs afterglow"
+  journal: "Mon. Not. R. Astron. Soc."
+  volume: "511"
+  pages: "2356–2366"
+  year: 2022
+  url: "https://arxiv.org/abs/1912.09436"
+  summary: >-
+    Compares detectability of prompt and afterglow emission from BNS mergers, highlighting observational strategies for EM follow-up.
+
+- authors: "R. Abbott et al."
+  title: "Tests of general relativity with binary black holes from the second LIGO–Virgo gravitational-wave transient catalog"
+  journal: "Phys. Rev. D"
+  volume: "103"
+  pages: "122002"
+  year: 2021
+  url: "https://arxiv.org/abs/2010.14529"
+  summary: >-
+    Comprehensive GR tests using BBH events from GWTC-2, placing bounds on dispersion, PN coefficients, and deviations from Kerr.
+
+- authors: "M. Saleem"
+  title: "Prospects of joint detections of neutron star mergers and short GRBs with Gaussian structured jets"
+  journal: "Mon. Not. R. Astron. Soc."
+  volume: "493"
+  pages: "1633–1639"
+  year: 2020
+  url: "https://doi.org/10.1093/mnras/staa303"
+  summary: >-
+    Predicts joint GW–sGRB detection rates under structured-jet models and discusses implications for multi-messenger scheduling.
+
+- authors: "M. Saleem; L. Resmi; K. G. Arun; S. Mohan"
+  title: "On the energetics of a possible relativistic jet associated with the binary neutron star merger candidate S190425z"
+  journal: "Astrophys. J."
+  volume: "891"
+  pages: "130"
+  year: 2020
+  url: "https://arxiv.org/abs/1905.00337"
+  summary: >-
+    Estimates the energy budget and feasibility of a relativistic jet associated with the S190425z candidate.
+
+- authors: "S. Kastha; M. Saleem; K. G. Arun"
+  title: "Imprints of the redshift evolution of double neutron star merger rate on the signal-to-noise ratio distribution"
+  journal: "Mon. Not. R. Astron. Soc."
+  volume: "496"
+  pages: "523–531"
+  year: 2020
+  url: "https://doi.org/10.1093/mnras/staa1077"
+  summary: >-
+    Shows how the SNR distribution encodes the redshift evolution of the DNS merger rate, enabling constraints from catalog statistics.
+
+- authors: "N. V. Krishnendu; M. Saleem; A. Samajdar; K. G. Arun; W. Del Pozzo; C. K. Mishra"
+  title: "Constraints on the binary black hole nature of GW151226 and GW170608 from the measurement of spin-induced quadrupole moments"
+  journal: "Phys. Rev. D"
+  volume: "100"
+  pages: "104019"
+  year: 2019
+  url: "https://arxiv.org/abs/1908.02247"
+  summary: >-
+    Uses spin-induced quadrupole measurements to test whether GW151226 and GW170608 are consistent with Kerr black holes.
+
+- authors: "M. Saleem; L. Resmi; K. Misra; A. Pai; K. G. Arun"
+  title: "Exploring short-GRB afterglow parameter space for observations in coincidence with gravitational waves"
+  journal: "Mon. Not. R. Astron. Soc."
+  volume: "474"
+  pages: "5340–5350"
+  year: 2018
+  url: "https://arxiv.org/abs/1710.06102"
+  summary: >-
+    Maps afterglow parameter space relevant for coincident GW–SGRB observations and identifies favorable regimes for follow-up.
+
+- authors: "M. Saleem; A. Pai; K. Misra; L. Resmi; K. G. Arun"
+  title: "Rates of short-GRB afterglows in association with binary neutron star mergers"
+  journal: "Mon. Not. R. Astron. Soc."
+  volume: "475"
+  pages: "699–707"
+  year: 2018
+  url: "https://arxiv.org/abs/1710.06111"
+  summary: >-
+    Predicts afterglow rates associated with BNS mergers and discusses observing strategies for EM counterparts.
+
+- authors: "B. P. Abbott et al."
+  title: "GW170817: Observation of gravitational waves from a binary neutron star inspiral"
+  journal: "Phys. Rev. Lett."
+  volume: "119"
+  pages: "161101"
+  year: 2017
+  url: "https://arxiv.org/abs/1710.05832"
+  summary: >-
+    First observation of a BNS merger via GWs, enabling the era of multi-messenger astronomy.
+    Contribution: analysis of the associated GRB and multi-messenger interpretation.
+
+- authors: "B. P. Abbott et al."
+  title: "Gravitational waves and gamma-rays from a binary neutron star merger: GW170817 and GRB 170817A"
+  journal: "Astrophys. J. Lett."
+  volume: "848"
+  pages: "L13"
+  year: 2017
+  url: "https://arxiv.org/abs/1710.05834"
+  summary: >-
+    Joint GW–gamma-ray observation of GW170817/GRB 170817A and implications for jet structure and prompt emission.
+    Contribution: analysis related to the jet structure of the GRB.
+
+- authors: "B. P. Abbott et al."
+  title: "Binary black hole mergers in the first Advanced LIGO observing run"
+  journal: "Phys. Rev. X"
+  volume: "6"
+  pages: "041015"
+  year: 2016
+  url: "https://arxiv.org/abs/1606.04856"
+  summary: >-
+    Catalog and analysis of BBH mergers from O1, establishing rates and key population properties.
+
+- authors: "B. P. Abbott et al."
+  title: "Tests of general relativity with GW150914"
+  journal: "Phys. Rev. Lett."
+  volume: "116"
+  pages: "221101"
+  year: 2016
+  url: "https://arxiv.org/abs/1602.03841"
+  summary: >-
+    First comprehensive GR tests on GW150914, finding consistency with GR across multiple analyses.
+
+- authors: "B. P. Abbott et al."
+  title: "Observation of gravitational waves from a binary black hole merger"
+  journal: "Phys. Rev. Lett."
+  volume: "116"
+  pages: "061102"
+  year: 2016
+  url: "https://arxiv.org/abs/1602.03837"
+  summary: >-
+    First direct detection of gravitational waves, GW150914, inaugurating gravitational-wave astronomy.
+
+
 
