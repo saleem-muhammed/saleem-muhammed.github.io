@@ -95,3 +95,26 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
 .pub-list { list-style: disc; padding-left: 1.25rem; }
 .pub-list li { margin: .6rem 0; }
 
+
+/* Make each entry feel clickable and give some padding */
+.pub-list a.pub { display:block; padding:6px 10px; }
+
+/* Optional: mild in-container highlight as well */
+.pub-list li{ position:relative; border-radius:10px; }
+.pub-list li:hover{
+  background: color-mix(in oklab, var(--accent) 12%, var(--card) 88%);
+}
+
+/* Full-bleed stripe that spans the entire screen width */
+#row-highlight{
+  position: fixed;
+  left: 0; right: 0;
+  background: color-mix(in oklab, var(--accent) 16%, var(--bg) 84%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  height: 0;
+  display: none;
+  pointer-events: none;     /* allow clicks through it */
+  z-index: 12;              /* below the tooltip (which uses z-index:20) */
+}
+
