@@ -8,8 +8,7 @@ title: Publications
   <li>
     <a class="pub"
        href="{{ p.url }}"
-       data-summary="{{ p.summary | strip_newlines | escape }}"
-       title="{{ p.summary | strip_newlines | escape }}">
+       data-summary="{{ p.summary | strip_newlines | escape }}">
       {{ p.authors }} — “{{ p.title }},”
       <em>{{ p.journal }}</em>{% if p.volume %} <strong>{{ p.volume }}</strong>{% endif %}
       {% if p.pages %}, {{ p.pages }}{% endif %}
