@@ -1,13 +1,12 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }} · {{ site.title }}</title>
 
 <link rel="stylesheet" href="/assets/style.css">
-<script defer src="/assets/theme.js"></script>
 
-<body class="{% if page.hero_image %}has-hero{% endif %}">
+<body>
   {% include sidebar.html %}
 
   <div class="ms-page">
@@ -19,15 +18,6 @@
             <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
           {% endfor %}
         </div>
-
-        <button class="toggle" data-theme-toggle>
-          <span>Theme:</span> <span data-theme-label>Dark</span>
-        </button>
-        <select class="toggle" data-palette-select aria-label="Color palette">
-          <option value="austin">Austin</option>
-          <option value="teal">Teal</option>
-          <option value="nord">Nord</option>
-        </select>
       </nav>
     </header>
 

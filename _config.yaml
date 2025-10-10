@@ -4,15 +4,17 @@ theme: null
 plugins: []
 permalink: pretty
 
-# --- Sidebar profile + color (the blue you want) ---
 profile:
   name: "Muhammed Saleem Cholayil"
   designation: "Research Fellow, Weinberg Institute · UT Austin"
-  areas: ["Gravitational Waves", "Data Analysis", "Machine Learning", "Multi-messenger"]
-  photo: "/assets/img/profile.jpg"         # add this image
-  accent_hex: "#1877f2"                    # your blue; change if you like
+  # These are rendered as a vertical, unnumbered list in the sidebar
+  areas:
+    - Gravitational Waves
+    - Data Analysis
+    - Machine Learning
+    - Multi-messenger
+  photo: "/assets/img/profile.jpg"
 
-# --- Social links shown as buttons in sidebar ---
 social:
   email: "muhammed.cholayil@austin.utexas.edu"
   linkedin: "https://www.linkedin.com/in/..."
@@ -22,7 +24,6 @@ social:
   scopus: "https://www.scopus.com/authid/detail.uri?authorId=..."
   github: "https://github.com/saleem-muhammed"
 
-# --- Single source of truth for top & left nav ---
 nav:
   - title: Home
     url: /
@@ -30,10 +31,7 @@ nav:
     url: /research/
   - title: Publications
     url: /publications/
-  - title: Teaching & Mentoring
+  - title: Teaching
     url: /teaching/
-  - title: Awards & Memberships
-    url: /awards/
   - title: CV
     url: /cv/
-
