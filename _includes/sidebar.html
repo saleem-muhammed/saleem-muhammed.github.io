@@ -1,24 +1,23 @@
-<aside class="ms-sidebar" style="--ms-accent: {{ site.profile.accent_hex }}">
+<aside class="ms-sidebar">
   <div class="ms-sidebar__top">
     <img class="ms-avatar" src="{{ site.profile.photo | relative_url }}" alt="{{ site.profile.name }}">
     <h1 class="ms-name">{{ site.profile.name }}</h1>
     <div class="ms-desig">{{ site.profile.designation }}</div>
+
+    <!-- Research Areas as a centered, unnumbered vertical list -->
     <ul class="ms-areas">
-      {% for a in site.profile.areas %}<li>{{ a }}</li>{% endfor %}
+      {% for a in site.profile.areas %}
+        <li>{{ a }}</li>
+      {% endfor %}
     </ul>
-  </div>
 
-  <!-- Left nav removed on purpose (tabs stay only on the top bar) -->
+    <!-- thin divider under areas -->
+    <hr class="ms-sep">
 
-  <div class="ms-social ms-links">
-    {% assign s = site.social %}
-    {% if s.email %}<a href="mailto:{{ s.email }}">Email</a>{% endif %}
-    {% if s.linkedin %}<a href="{{ s.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
-    {% if s.scholar %}<a href="{{ s.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
-    {% if s.inspirehep %}<a href="{{ s.inspirehep }}" target="_blank" rel="noopener">InspireHEP</a>{% endif %}
-    {% if s.orcid %}<a href="{{ s.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
-    {% if s.scopus %}<a href="{{ s.scopus }}" target="_blank" rel="noopener">Scopus</a>{% endif %}
-    {% if s.github %}<a href="{{ s.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+    <!-- Three-line packed links (editable via Markdown include) -->
+    <div class="ms-links-grid">
+      {% include sidebar-links.md %}
+    </div>
   </div>
 </aside>
 
