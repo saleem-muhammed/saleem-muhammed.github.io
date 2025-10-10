@@ -18,7 +18,7 @@
   --lh: 1.8;              /* generous line height */
 
   /* Layout */
-  --ms-sidebar-w: 380px;  /* widened sidebar */
+  --ms-sidebar-w: 420px;  /* widened sidebar */
 }
 
 /* ===== Base ===== */
@@ -128,7 +128,7 @@ header{
 
 /* Right content area */
 .ms-page{
-  margin-left: var(--ms-sidebar-w);
+  margin-left: var(--ms-sidebar-w); 
   min-height:100dvh;
   display:flex; flex-direction:column;
 }
