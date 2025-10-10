@@ -2,6 +2,7 @@
 layout: default
 title: Home
 permalink: /
+hero_image: /assets/img/hero-galaxy.jpg
 ---
 
 <div class="profile card">

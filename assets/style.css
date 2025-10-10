@@ -156,6 +156,8 @@ h3{ font-size:1.1rem; margin:1.25rem 0 .35rem }
 
 /* Hide the main-content profile headshot (sidebar photo only) */
 main .profile img{ display:none !important; }
+/* Hide the entire main profile card on the home page */
+main .profile.card{ display:none !important; }
 
 /* ===== Lists, tables, code, footer ===== */
 ul{ padding-left:1.1rem; margin-top:.25rem }
