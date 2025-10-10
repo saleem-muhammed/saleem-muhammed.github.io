@@ -185,3 +185,7 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
   body.nav-open .ms-sidebar{ transform: translateX(0); }
   .ms-page{ margin-left: 0; }
 }
+
+/* tidy the three Markdown paragraphs rendered inside the grid */
+.ms-links-grid p{ margin: 8px 0; }
+

@@ -4,19 +4,19 @@
     <h1 class="ms-name">{{ site.profile.name }}</h1>
     <div class="ms-desig">{{ site.profile.designation }}</div>
 
-    <!-- Research Areas as a centered, unnumbered vertical list -->
+    <!-- Research Areas -->
     <ul class="ms-areas">
       {% for a in site.profile.areas %}
         <li>{{ a }}</li>
       {% endfor %}
     </ul>
 
-    <!-- thin divider under areas -->
     <hr class="ms-sep">
 
-    <!-- Three-line packed links (editable via Markdown include) -->
+    <!-- Three-line links (Markdown include -> markdownify) -->
     <div class="ms-links-grid">
-      {% include sidebar-links.md %}
+      {% capture links_md %}{% include sidebar-links.md %}{% endcapture %}
+      {{ links_md | markdownify }}
     </div>
   </div>
 </aside>
