@@ -8,27 +8,17 @@
     </ul>
   </div>
 
-  <nav class="ms-nav">
-    <ul>
-      {% assign nav_items = site.nav %}
-      {% for item in nav_items %}
-        {% assign active = (page.url == item.url) or (page.permalink == item.url) %}
-        <li class="{% if active %}active{% endif %}">
-          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
+  <!-- Left nav removed on purpose (tabs stay only on the top bar) -->
 
-  <div class="ms-social">
+  <div class="ms-social ms-links">
     {% assign s = site.social %}
-    {% if s.email %}<a class="btn" href="mailto:{{ s.email }}">Email</a>{% endif %}
-    {% if s.linkedin %}<a class="btn" href="{{ s.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
-    {% if s.scholar %}<a class="btn" href="{{ s.scholar }}" target="_blank" rel="noopener">Scholar</a>{% endif %}
-    {% if s.inspirehep %}<a class="btn" href="{{ s.inspirehep }}" target="_blank" rel="noopener">InspireHEP</a>{% endif %}
-    {% if s.orcid %}<a class="btn" href="{{ s.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
-    {% if s.scopus %}<a class="btn" href="{{ s.scopus }}" target="_blank" rel="noopener">Scopus</a>{% endif %}
-    {% if s.github %}<a class="btn" href="{{ s.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+    {% if s.email %}<a href="mailto:{{ s.email }}">Email</a>{% endif %}
+    {% if s.linkedin %}<a href="{{ s.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+    {% if s.scholar %}<a href="{{ s.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+    {% if s.inspirehep %}<a href="{{ s.inspirehep }}" target="_blank" rel="noopener">InspireHEP</a>{% endif %}
+    {% if s.orcid %}<a href="{{ s.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
+    {% if s.scopus %}<a href="{{ s.scopus }}" target="_blank" rel="noopener">Scopus</a>{% endif %}
+    {% if s.github %}<a href="{{ s.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
   </div>
 </aside>
 
