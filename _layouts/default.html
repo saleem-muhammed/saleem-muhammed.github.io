@@ -3,37 +3,48 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }} · {{ site.title }}</title>
+
 <link rel="stylesheet" href="/assets/style.css">
 <script defer src="/assets/theme.js"></script>
 
-<header>
-  <nav class="nav">
-    <div class="spacer"></div>
-    <div class="menu">
-      <a href="/">Home</a>
-      <a href="/research/">Research</a>
-      <a href="/publications/">Publications</a>
-      <a href="/teaching/">Teaching & Mentoring</a>
-      <a href="/awards/">Awards & Memberships</a>
-      <a href="/cv/">CV</a>
+<body class="{% if page.hero_image %}has-hero{% endif %}">
+  {% include sidebar.html %}
+
+  <div class="ms-page">
+    <header>
+      <nav class="nav">
+        <div class="spacer"></div>
+        <div class="menu">
+          {% for item in site.nav %}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% endfor %}
+        </div>
+
+        <button class="toggle" data-theme-toggle>
+          <span>Theme:</span> <span data-theme-label>Dark</span>
+        </button>
+        <select class="toggle" data-palette-select aria-label="Color palette">
+          <option value="austin">Austin</option>
+          <option value="teal">Teal</option>
+          <option value="nord">Nord</option>
+        </select>
+      </nav>
+    </header>
+
+    {% if page.hero_image %}
+    <div class="ms-hero" style="background-image:url('{{ page.hero_image | relative_url }}')">
+      <div class="ms-hero__overlay"></div>
     </div>
-    <button class="toggle" data-theme-toggle>
-      <span>Theme:</span> <span data-theme-label>Dark</span>
-    </button>
-    <select class="toggle" data-palette-select aria-label="Color palette">
-      <option value="austin">Austin</option>
-      <option value="teal">Teal</option>
-      <option value="nord">Nord</option>
-    </select>
-  </nav>
-</header>
+    {% endif %}
 
-<main>
-  {{ content }}
-</main>
+    <main>
+      {{ content }}
+    </main>
 
-<footer>
-  <p>© Muhammed Saleem Cholayil · Built with GitHub Pages.</p>
-</footer>
+    <footer>
+      <p>© Muhammed Saleem Cholayil · Built with GitHub Pages.</p>
+    </footer>
+  </div>
+</body>
 </html>
 
