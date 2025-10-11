@@ -25,12 +25,14 @@ hero_image: /assets/img/hero-galaxy.jpg
 </div>
 
 ## About
-I am a researcher interested in the consequences of gravitational-wave observations from the 2nd  and 3rd generation interferometers. My area of research spans tests of Einstein's general relativity, multimessenger studies of compact objects, detection and characterization of stochastic gravitational wave background from binary black holes, and development of novel data analysis methods including machine learning for applications such as data denoising. My research spans population inference and tests of general relativity, real-time denoising and pipelines for GW detectors, and multi-messenger studies of compact objects.
 
-*Previously: Postdoctoral Associate at the University of Minnesota; Visiting Fellow at Chennai Mathematical Institute; Research Associate at IIT Bombay.*
+I’m **Muhammed Saleem Cholayil**, a Research Fellow at the **Weinberg Institute for Theoretical Physics (UT Austin)**. My work uses **gravitational-wave observations** to address questions in **fundamental physics, astrophysics, and cosmology**. I focus on **strong-field tests of general relativity**, the **stochastic gravitational-wave background**, **multi-messenger studies of compact objects**, and advanced **data-analysis techniques** for GW experiments—particularly **Bayesian inference** and **machine learning** for population iference, noise characterization and low-latency pipelines.
 
-## Contact
-- Email: [muhammed.cholayil@austin.utexas.edu](mailto:muhammed.cholayil@austin.utexas.edu)  
-- Alt: [saleem.muhammed.c@gmail.com](mailto:saleem.muhammed.c@gmail.com), [msc3988@utexas.edu](mailto:msc3988@utexas.edu)  
-- Address: Center for Gravitational Physics, Robert A. Welch Hall (WEL), 105 E 24th St, Austin, TX 78712
+
+Previously, I was a Postdoctoral Associate at the University of Minnesota, a Visiting Fellow at Chennai Mathematical Institute, after my graduate studies at Indian Institute of Science Education and Research Thiruvananthapuram. 
+
+In this website, you will find more details about my work. 
+
+
+Office: 4.232K, Center for Gravitational Physics, Robert A. Welch Hall (WEL), 105 E 24th St, Austin, TX 78712
 
