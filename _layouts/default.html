@@ -1,39 +1,43 @@
 <!doctype html>
-<html lang="en" class="dark {% if page.home %}is-home{% else %}is-inner{% endif %}">
+<html lang="en" class="{% if page.home %}is-home{% else %}is-inner{% endif %}">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }} · {{ site.title }}</title>
 <link rel="stylesheet" href="/assets/style.css">
-<script defer src="/assets/theme.js"></script>
 
-<header>
-  <nav class="nav">
-    <div class="spacer"></div>
-    <div class="menu">
-      <a href="/">Home</a>
-      <a href="/research/">Research</a>
-      <a href="/publications/">Publications</a>
-      <a href="/teaching/">Teaching</a>
-      <a href="/cv/">CV</a>
-    </div>
-  </nav>
-</header>
+<body>
+  <!-- Fixed sidebar lives in the DOM once; CSS decides mobile/desktop behavior -->
+  {% include sidebar.html %}
 
-{% include sidebar.html %}
+  <div class="ms-page">
+    <header>
+      <nav class="nav">
+        <div class="spacer"></div>
+        <div class="menu">
+          <a href="/">Home</a>
+          <a href="/research/">Research</a>
+          <a href="/publications/">Publications</a>
+          <a href="/teaching/">Teaching</a>
+          <a href="/cv/">CV</a>
+        </div>
+      </nav>
+    </header>
 
-<main class="ms-page">
-  {% assign hero_src = page.hero_image | default: site.hero_image %}
-  {% if hero_src %}
-    <div class="ms-hero" style="background-image:url('{{ hero_src | relative_url }}')">
-      <div class="ms-hero__overlay"></div>
-    </div>
-  {% endif %}
+    {% assign hero_src = page.hero_image | default: site.hero_image %}
+    {% if hero_src %}
+      <div class="ms-hero" style="background-image:url('{{ hero_src | relative_url }}')">
+        <div class="ms-hero__overlay"></div>
+      </div>
+    {% endif %}
 
-  {{ content }}
-</main>
+    <main>
+      {{ content }}
+    </main>
 
-<footer>
-  <p>© Muhammed Saleem Cholayil · Built with GitHub Pages.</p>
-</footer>
+    <footer>
+      <p>© Muhammed Saleem Cholayil · Built with GitHub Pages.</p>
+    </footer>
+  </div>
+</body>
 </html>
 
