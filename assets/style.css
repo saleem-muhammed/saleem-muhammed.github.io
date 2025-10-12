@@ -267,3 +267,52 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
   border-bottom-color: color-mix(in oklab, var(--border) 70%, var(--accent) 30%);
   z-index: 251;
 }
+
+/* === OPAQUE publication tooltip (no blending) === */
+:root{
+  /* solid tooltip colors tuned for Nord palette */
+  --tooltip-bg: #202938;            /* opaque, slightly lighter than --card */
+  --tooltip-border: #3a4a68;        /* subtle border */
+}
+
+.pub[data-summary]:hover::after,
+.pub[data-summary]:focus-visible::after{
+  content: attr(data-summary);
+  position: absolute;
+  left: 0.5rem;                     /* slight inset from the number */
+  top: 100%;
+  margin-top: .5rem;
+
+  width: min(28rem, 90vw);
+  background: var(--tooltip-bg);    /* FULLY OPAQUE background */
+  color: var(--fg);
+  border: 1px solid var(--tooltip-border);
+  padding: .7rem .9rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.45);
+  line-height: 1.45;
+  white-space: normal;
+  z-index: 350;
+
+  /* ensure no blending with underlying text */
+  opacity: 1;
+  mix-blend-mode: normal;
+  backdrop-filter: none;
+}
+
+.pub[data-summary]:hover::before,
+.pub[data-summary]:focus-visible::before{
+  content: "";
+  position: absolute;
+  left: 1.2rem;
+  top: calc(100% + 2px);
+  border: 7px solid transparent;
+  border-bottom-color: var(--tooltip-border); /* arrow outline */
+  z-index: 351;
+}
+
+/* optional: inner arrow fill to match the box, for a crisper look */
+.pub[data-summary]:hover::after{
+  /* create an inner arrow by overlaying a pseudo element */
+}
+
