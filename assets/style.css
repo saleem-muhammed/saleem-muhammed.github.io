@@ -271,8 +271,8 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
 /* === OPAQUE publication tooltip (no blending) === */
 :root{
   /* solid tooltip colors tuned for Nord palette */
-  --tooltip-bg: #202938;            /* opaque, slightly lighter than --card */
-  --tooltip-border: #3a4a68;        /* subtle border */
+  --tooltip-bg: #22324b;            /* opaque, slightly lighter than --card */
+  --tooltip-border: #4a618b;        /* subtle border */
 }
 
 .pub[data-summary]:hover::after,
