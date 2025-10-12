@@ -361,3 +361,34 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
   border-color: var(--border);
   font-weight: 600;
 }
+
+/* ===== Mobile behavior for sidebar: Home shows it first; others hide it ===== */
+@media (max-width: 820px){
+  /* Default mobile baseline from earlier: no left margin */
+  .ms-page{ margin-left: 0; }
+
+  /* On inner pages (not home): hide sidebar entirely on mobile */
+  html.is-inner .ms-sidebar{
+    display: none !important;
+  }
+
+  /* On home: show the sidebar as a normal block ABOVE content */
+  html.is-home .ms-sidebar{
+    position: static !important;   /* no fixed/overlay */
+    width: auto !important;
+    border-right: none !important;
+    padding: 16px 20px !important;
+    transform: none !important;    /* override any slide-out */
+    display: block !important;
+    background: var(--bg);
+  }
+
+  /* Small divider below the sidebar on home to separate from main content */
+  html.is-home .ms-sidebar::after{
+    content: "";
+    display: block;
+    border-top: 1px solid var(--border);
+    margin: 12px 0 0;
+  }
+}
+

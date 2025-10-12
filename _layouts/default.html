@@ -1,40 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark {% if page.url == '/' %}is-home{% else %}is-inner{% endif %}">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }} · {{ site.title }}</title>
-
 <link rel="stylesheet" href="/assets/style.css">
+<script defer src="/assets/theme.js"></script>
 
-<body>
-  {% include sidebar.html %}
-
-  <div class="ms-page">
-    <header>
-      <nav class="nav">
-        <div class="spacer"></div>
-        <div class="menu">
-          {% for item in site.nav %}
-            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-          {% endfor %}
-        </div>
-      </nav>
-    </header>
-
-    {% if page.hero_image %}
-    <div class="ms-hero" style="background-image:url('{{ page.hero_image | relative_url }}')">
-      <div class="ms-hero__overlay"></div>
+<header>
+  <nav class="nav">
+    <div class="spacer"></div>
+    <div class="menu">
+      <a href="/">Home</a>
+      <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
+      <a href="/teaching/">Teaching</a>
+      <a href="/cv/">CV</a>
     </div>
-    {% endif %}
+  </nav>
+</header>
 
-    <main>
-      {{ content }}
-    </main>
+{% include sidebar.html %}
 
-    <footer>
-      <p>© Muhammed Saleem Cholayil · Built with GitHub Pages.</p>
-    </footer>
-  </div>
-</body>
+<main class="ms-page">
+  {{ content }}
+</main>
+
+<footer>
+  <p>© Muhammed Saleem Cholayil · Built with GitHub Pages.</p>
+</footer>
 </html>
 
