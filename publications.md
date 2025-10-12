@@ -28,54 +28,53 @@ title: Publications
       </ol>
     </section>
 
-    <!-- By category -->
-    <section class="panel" data-tab="cat">
+    <!-- By category (enable Markdown inside this HTML block) -->
+    <section class="panel" data-tab="cat" markdown="1">
 
-      ### Observational tests of strong-field gravity {#strong-gravity}
-      <ol class="pub-list">
-      {% for p in site.data.publications %}{% if p.cats contains "strong-gravity" %}
-        <li>
-          <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
-            {{ p.authors }} — “{{ p.title }},” <em>{{ p.journal }}</em>{% if p.volume %} <strong>{{ p.volume }}</strong>{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.year %} ({{ p.year }}){% endif %}.
-          </a>
-        </li>
-      {% endif %}{% endfor %}
-      </ol>
+### Strong-field gravity {#strong-gravity}
+<ol class="pub-list">
+{% for p in site.data.publications %}{% if p.cats contains "strong-gravity" %}
+  <li>
+    <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
+      {{ p.authors }} — “{{ p.title }},” <em>{{ p.journal }}</em>{% if p.volume %} <strong>{{ p.volume }}</strong>{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.year %} ({{ p.year }}){% endif %}.
+    </a>
+  </li>
+{% endif %}{% endfor %}
+</ol>
 
-      ### Multi-messenger astronomy {#multi-messenger}
-      <ol class="pub-list">
-      {% for p in site.data.publications %}{% if p.cats contains "multi-messenger" %}
-        <li>
-          <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
-            {{ p.authors }} — “{{ p.title }},” <em>{{ p.journal }}</em>{% if p.volume %} <strong>{{ p.volume }}</strong>{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.year %} ({{ p.year }}){% endif %}.
-          </a>
-        </li>
-      {% endif %}{% endfor %}
-      </ol>
+### Multi-messenger astronomy {#multi-messenger}
+<ol class="pub-list">
+{% for p in site.data.publications %}{% if p.cats contains "multi-messenger" %}
+  <li>
+    <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
+      {{ p.authors }} — “{{ p.title }},” <em>{{ p.journal }}</em>{% if p.volume %} <strong>{{ p.volume }}</strong>{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.year %} ({{ p.year }}){% endif %}.
+    </a>
+  </li>
+{% endif %}{% endfor %}
+</ol>
 
-      ### Stochastic GW background {#stochastic}
-      <ol class="pub-list">
-      {% for p in site.data.publications %}{% if p.cats contains "stochastic" %}
-        <li>
-          <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
-            {{ p.authors }} — “{{ p.title }},” <em>{{ p.journal }}</em>{% if p.volume %} <strong>{{ p.volume }}</strong>{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.year %} ({{ p.year }}){% endif %}.
-          </a>
-        </li>
-      {% endif %}{% endfor %}
-      </ol>
+### Stochastic GW background {#stochastic}
+<ol class="pub-list">
+{% for p in site.data.publications %}{% if p.cats contains "stochastic" %}
+  <li>
+    <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
+      {{ p.authors }} — “{{ p.title }},” <em>{{ p.journal }}</em>{% if p.volume %} <strong>{{ p.volume }}</strong>{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.year %} ({{ p.year }}){% endif %}.
+    </a>
+  </li>
+{% endif %}{% endfor %}
+</ol>
 
-      ### ML applications in GW data analysis {#ml-gw}
-      <ol class="pub-list">
-      {% for p in site.data.publications %}{% if p.cats contains "ml-gw" %}
-        <li>
-          <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
-            {{ p.authors }} — “{{ p.title }},” <em>{{ p.journal }}</em>{% if p.volume %} <strong>{{ p.volume }}</strong>{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.year %} ({{ p.year }}){% endif %}.
-          </a>
-        </li>
-      {% endif %}{% endfor %}
-      </ol>
+### ML applications in GW data analysis {#ml-gw}
+<ol class="pub-list">
+{% for p in site.data.publications %}{% if p.cats contains "ml-gw" %}
+  <li>
+    <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
+      {{ p.authors }} — “{{ p.title }},” <em>{{ p.journal }}</em>{% if p.volume %} <strong>{{ p.volume }}</strong>{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.year %} ({{ p.year }}){% endif %}.
+    </a>
+  </li>
+{% endif %}{% endfor %}
+</ol>
 
     </section>
-
   </div>
 </div>

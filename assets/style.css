@@ -316,3 +316,48 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
   /* create an inner arrow by overlaying a pseudo element */
 }
 
+/* ===== FIX: tooltip always on top & siblings don't cover it ===== */
+.pub-list,
+.pub-list li,
+.pub { position: relative; overflow: visible; }
+
+.pub-list li { z-index: 0; }              /* baseline */
+.pub:hover { z-index: 3; }                 /* the link itself */
+.pub-list li:hover { z-index: 2; }         /* hovered row above neighbors */
+
+.pub[data-summary]:hover::after,
+.pub[data-summary]:focus-visible::after{
+  z-index: 10000;                          /* ensure above everything nearby */
+}
+
+.pub[data-summary]:hover::before,
+.pub[data-summary]:focus-visible::before{
+  z-index: 10001;
+}
+
+/* ===== RESTORE TABS (radio-driven) ===== */
+.pub-tabs input[type="radio"]{
+  position:absolute; opacity:0; pointer-events:none;
+}
+.pub-tabs .tab{
+  display:inline-block; padding:10px 14px; margin:0 6px 6px 0;
+  border:1px solid var(--border); border-bottom:none; border-radius:12px 12px 0 0;
+  background: var(--card); color: var(--fg); cursor:pointer; user-select:none;
+}
+.pub-tabs .tab:hover{ text-decoration:none; transform: translateY(-1px); }
+.pub-tabs .panels{
+  border:1px solid var(--border); border-radius:0 12px 12px 12px;
+  background: var(--card); padding:16px 16px 6px; overflow: visible;
+}
+/* show/hide panels based on the checked tab */
+.pub-tabs .panel{ display:none; }
+#tab-all:checked ~ .panels [data-tab="all"]{ display:block; }
+#tab-cat:checked ~ .panels [data-tab="cat"]{ display:block; }
+
+/* active tab highlight */
+#tab-all:checked + label.tab,
+#tab-cat:checked + label.tab{
+  background: color-mix(in oklab, var(--accent) 16%, var(--card) 84%);
+  border-color: var(--border);
+  font-weight: 600;
+}
