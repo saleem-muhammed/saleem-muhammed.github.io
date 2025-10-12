@@ -368,3 +368,42 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
 
 /* (Optional) If you previously elevated li on hover, neutralize it */
 .pub-list li:hover{ z-index: 0 !important; }
+
+/* === No-overlap tooltip: render ABOVE the entry and make room under the row === */
+
+/* Put the tooltip ABOVE instead of below */
+.pub[data-summary]:hover::after,
+.pub[data-summary]:focus-visible::after{
+  top: auto !important;
+  bottom: calc(100% + .5rem) !important;   /* show above */
+}
+
+/* Arrow now points upward */
+.pub[data-summary]:hover::before,
+.pub[data-summary]:focus-visible::before{
+  top: auto !important;
+  bottom: calc(100% + 2px) !important;
+  border-bottom-color: transparent !important;
+  border-top-color: var(--tooltip-border) !important;
+}
+
+/* Keep it on top and non-interactive (so hover doesn't transfer) */
+.pub[data-summary]:hover::after,
+.pub[data-summary]:focus-visible::after,
+.pub[data-summary]:hover::before,
+.pub[data-summary]:focus-visible::before{
+  z-index: 2147483647 !important;
+  pointer-events: none !important;
+}
+
+/* Progressive enhancement: add padding under the hovered row so nothing crowds it */
+@supports(selector(:has(*))){
+  .pub-list li:has(.pub:hover){
+    padding-bottom: 2.2rem;                 /* room for the tooltip above */
+  }
+}
+
+/* Fallback for older browsers (no :has): add a tiny gap on hover anyway */
+.pub-list li:hover{
+  padding-bottom: 1.2rem;
+}
