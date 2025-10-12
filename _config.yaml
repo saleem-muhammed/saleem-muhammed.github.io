@@ -9,10 +9,12 @@ profile:
   designation: "Research Fellow, Weinberg Institute · UT Austin"
   # These are rendered as a vertical, unnumbered list in the sidebar
   areas:
-    - Gravitational Waves
-    - Data Analysis
-    - Machine Learning
-    - Multi-messenger
+    - Strong-field gravity tests
+    - Exotic compact objects
+    - Stochastic GW background
+    - Multi-messenger astronomy
+    - GW noise & denoising
+    - Bayesian / ML inference  
   photo: "/assets/img/profile.jpg"
 
 social:
