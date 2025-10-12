@@ -2,6 +2,7 @@
 layout: default
 title: Home
 permalink: /
+home: true
 hero_image: /assets/img/hero-galaxy.jpg
 ---
 
