@@ -26,7 +26,7 @@ hero_image: /assets/img/hero-galaxy.jpg
 
 ## About
 
-I’m **Muhammed Saleem Cholayil**, a Research Fellow at the **Weinberg Institute for Theoretical Physics (UT Austin)**. My work uses **gravitational-wave observations** to address questions in **fundamental physics, astrophysics, and cosmology**. I focus on **strong-field tests of general relativity**, the **stochastic gravitational-wave background**, **multi-messenger studies of compact objects**, and advanced **data-analysis techniques** for GW experiments—particularly **Bayesian inference** and **machine learning** for population iference, noise characterization and low-latency pipelines.
+I’m Muhammed Saleem Cholayil, a Research Fellow at the Weinberg Institute for Theoretical Physics (University of Texas at Austin). My work uses gravitational-wave observations to address questions in fundamental physics, astrophysics, and cosmology. I focus on strong-field tests of general relativity, the stochastic gravitational-wave background, multi-messenger studies of compact objects, and advanced data-analysis techniques for GW experiments—particularly Bayesian inference and machine learning for population iference, noise characterization and low-latency pipelines.
 
 
 Previously, I was a Postdoctoral Associate at the University of Minnesota, a Visiting Fellow at Chennai Mathematical Institute, after my graduate studies at Indian Institute of Science Education and Research Thiruvananthapuram. 
