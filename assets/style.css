@@ -330,3 +330,41 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
   /* Slightly shorter hero on phones */
   .ms-hero{ height:160px; }
 }
+
+
+/* === Final tooltip stacking fix === */
+
+/* 1) Make the panels their own stacking context */
+.pub-tabs .panels{
+  position: relative;
+  isolation: isolate;    /* new stacking context so nothing outside can overlap */
+  overflow: visible;
+}
+
+/* 2) Rows never rise above the tooltip */
+.pub-list li{
+  position: relative;
+  z-index: 0 !important; /* keep rows flat */
+}
+
+/* 3) The link sits above its row; tooltip sits above everything */
+.pub{
+  position: relative;
+  z-index: 2;
+}
+
+/* 4) Tooltip: sky-high z-index + ignore pointer so hover stays on the link */
+.pub[data-summary]:hover::after,
+.pub[data-summary]:focus-visible::after{
+  z-index: 2147483647;       /* effectively top within this context */
+  pointer-events: none;      /* mouse can't "enter" the tooltip box */
+}
+
+.pub[data-summary]:hover::before,
+.pub[data-summary]:focus-visible::before{
+  z-index: 2147483647;
+  pointer-events: none;
+}
+
+/* (Optional) If you previously elevated li on hover, neutralize it */
+.pub-list li:hover{ z-index: 0 !important; }
