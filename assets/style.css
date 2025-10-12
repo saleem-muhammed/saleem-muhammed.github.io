@@ -189,51 +189,81 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
 /* tidy the three Markdown paragraphs rendered inside the grid */
 .ms-links-grid p{ margin: 8px 0; }
 
-/* --- Publications: restore hover-summary tooltip --- */
-.pub{
-  position: relative;          /* anchor for tooltip */
-  text-decoration: none;
-  z-index: 1;                  /* create stacking context */
+/* =======================
+   Publications (numbered, separators, styled text, improved tooltip)
+   ======================= */
+
+/* Numbered list and spacing */
+.pub-list{
+  list-style: decimal;
+  padding-left: 1.6rem;
+  margin-top: .5rem;
+  overflow: visible;                 /* make sure tooltips can escape */
 }
 
-/* ensure no clipping above tooltip */
-.pub-list, .panel, .panels{ overflow: visible; }
+/* Thin separator per entry */
+.pub-list li{
+  margin: 0;
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--border);
+}
 
-/* tooltip bubble */
+/* Entry text styled like sidebar research areas */
+.pub-list a.pub{
+  display: block;
+  font-size: 18px;
+  line-height: 1.8;
+  font-style: italic;                /* remove if you prefer non-italic */
+  color: var(--fg);
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 2px 0;
+}
+.pub-list a.pub:hover{ text-decoration: underline; }
+
+/* Optional: gentle hover row tint */
+.pub-list li:hover{
+  background: color-mix(in oklab, var(--accent) 10%, var(--card) 90%);
+}
+
+/* Tooltip anchor + stacking */
+.pub{
+  position: relative; 
+  z-index: 1;                        /* create stacking context */
+}
+
+/* Prevent clipping at panel level too */
+.panel, .panels { overflow: visible; }
+
+/* Tooltip: narrower card with distinct tinted bg */
 .pub[data-summary]:hover::after,
 .pub[data-summary]:focus-visible::after{
   content: attr(data-summary);
   position: absolute;
-  left: 0;
+  left: 0.5rem;                      /* slight inset from the number */
   top: 100%;
   margin-top: .5rem;
-  background: var(--card);
+
+  width: min(28rem, 90vw);           /* narrower than page */
+  background: color-mix(in oklab, var(--card) 82%, var(--accent) 18%);
   color: var(--fg);
-  border: 1px solid var(--border);
-  padding: .6rem .8rem;
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  width: min(38rem, 92vw);
-  line-height: 1.4;
+  border: 1px solid color-mix(in oklab, var(--border) 70%, var(--accent) 30%);
+  padding: .7rem .9rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.45);
+  line-height: 1.45;
   white-space: normal;
-  z-index: 200;                /* above neighbors */
+  z-index: 250;                      /* float above neighbors */
 }
 
-/* little arrow */
+/* Little arrow for the tooltip */
 .pub[data-summary]:hover::before,
 .pub[data-summary]:focus-visible::before{
   content: "";
   position: absolute;
-  left: .9rem;
+  left: 1.2rem;
   top: calc(100% + 2px);
-  border: 6px solid transparent;
-  border-bottom-color: var(--border);
-  z-index: 201;
+  border: 7px solid transparent;
+  border-bottom-color: color-mix(in oklab, var(--border) 70%, var(--accent) 30%);
+  z-index: 251;
 }
-
-/* Optional: subtle row highlight + spacing (nice UX) */
-.pub-list{ list-style: disc; padding-left: 1.25rem; }
-.pub-list li{ margin: .6rem 0; }
-.pub-list a.pub{ display:block; padding:6px 10px; border-radius:10px; }
-.pub-list li:hover{ background: color-mix(in oklab, var(--accent) 12%, var(--card) 88%); }
-

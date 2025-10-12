@@ -16,7 +16,7 @@ title: Publications
 
     <!-- All publications -->
     <section class="panel" data-tab="all">
-      <ul class="pub-list">
+      <ol class="pub-list">
       {% assign pubs = site.data.publications | sort: "year" | reverse %}
       {% for p in pubs %}
         <li>
@@ -25,14 +25,14 @@ title: Publications
           </a>
         </li>
       {% endfor %}
-      </ul>
+      </ol>
     </section>
 
     <!-- By category -->
     <section class="panel" data-tab="cat">
 
       ### Observational tests of strong-field gravity {#strong-gravity}
-      <ul class="pub-list">
+      <ol class="pub-list">
       {% for p in site.data.publications %}{% if p.cats contains "strong-gravity" %}
         <li>
           <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
@@ -40,10 +40,10 @@ title: Publications
           </a>
         </li>
       {% endif %}{% endfor %}
-      </ul>
+      </ol>
 
       ### Multi-messenger astronomy {#multi-messenger}
-      <ul class="pub-list">
+      <ol class="pub-list">
       {% for p in site.data.publications %}{% if p.cats contains "multi-messenger" %}
         <li>
           <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
@@ -51,10 +51,10 @@ title: Publications
           </a>
         </li>
       {% endif %}{% endfor %}
-      </ul>
+      </ol>
 
       ### Stochastic GW background {#stochastic}
-      <ul class="pub-list">
+      <ol class="pub-list">
       {% for p in site.data.publications %}{% if p.cats contains "stochastic" %}
         <li>
           <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
@@ -62,10 +62,10 @@ title: Publications
           </a>
         </li>
       {% endif %}{% endfor %}
-      </ul>
+      </ol>
 
       ### ML applications in GW data analysis {#ml-gw}
-      <ul class="pub-list">
+      <ol class="pub-list">
       {% for p in site.data.publications %}{% if p.cats contains "ml-gw" %}
         <li>
           <a class="pub" href="{{ p.url }}" data-summary="{{ p.summary | strip_newlines | escape }}">
@@ -73,7 +73,7 @@ title: Publications
           </a>
         </li>
       {% endif %}{% endfor %}
-      </ul>
+      </ol>
 
     </section>
 
