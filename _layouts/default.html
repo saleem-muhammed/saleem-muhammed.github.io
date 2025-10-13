@@ -13,13 +13,13 @@
     <header>
       <nav class="nav">
         <div class="spacer"></div>
-        <div class="menu">
-          <a href="/">Home</a>
-          <a href="/research/">Research</a>
-          <a href="/publications/">Publications</a>
-          <a href="/teaching/">Teaching</a>
-          <a href="/cv/">CV</a>
-        </div>
+	<div class="menu">
+  	  <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+  	  <a href="/research/" class="{% if page.url == '/research/' or page.url contains '/research/' %}active{% endif %}">Research</a>
+  	  <a href="/publications/" class="{% if page.url == '/publications/' or page.url contains '/publications/' %}active{% endif %}">Publications</a>
+  	  <a href="/teaching/" class="{% if page.url == '/teaching/' or page.url contains '/teaching/' %}active{% endif %}">Teaching</a>
+  	  <a href="/cv/" class="{% if page.url == '/cv/' or page.url contains '/cv/' %}active{% endif %}">CV</a>
+	</div>
       </nav>
     </header>
 

@@ -407,3 +407,40 @@ footer{ max-width:var(--maxw); margin:40px auto 60px; padding:0 20px; color:var(
 .pub-list li:hover{
   padding-bottom: 1.2rem;
 }
+
+/* === Tile-style top nav with active highlight === */
+.nav .menu{
+  display:flex; gap:10px; flex-wrap:wrap;
+}
+
+.nav .menu a{
+  display:inline-block;
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background: var(--card);
+  color: var(--fg);
+  text-decoration:none;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18);
+  transition: transform .12s ease, background-color .12s ease, box-shadow .12s ease;
+}
+
+.nav .menu a:hover{
+  transform: translateY(-1px);
+  text-decoration:none;
+  background: color-mix(in oklab, var(--card) 85%, var(--accent) 15%);
+  box-shadow: 0 6px 18px rgba(0,0,0,.22);
+}
+
+.nav .menu a:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent) 40%, transparent), 0 6px 18px rgba(0,0,0,.22);
+}
+
+/* active (current page) */
+.nav .menu a.active{
+  background: color-mix(in oklab, var(--card) 75%, var(--accent) 25%);
+  border-color: var(--accent);
+  font-weight: 650;
+  box-shadow: 0 8px 22px rgba(0,0,0,.28);
+}
