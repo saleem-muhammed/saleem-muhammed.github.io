@@ -1,20 +1,45 @@
-- authors: "X.-X. Kou; M. Saleem; V. Mandic; C. Talbot; E. Thrane"
-  title: "Progress toward the detection of the gravitational-wave background from stellar-mass binary black holes: a mock data challenge"
+- authors: "Muhammed Saleem, Hsin-Yu Chen, Daniel M. Siegel, Philippe Landry, Jocelyn S. Read, Kaile Wang"
+  title: "Mergers Fall Short: Non-merger Channels Required for Galactic Heavy Element Production"
   journal: "arXiv"
   year: 2025
-  url: "https://arxiv.org/abs/2506.14179"
+  url: "https://arxiv.org/abs/2508.06020"
+  cats: ["multi-messenger"]
+  summary: >-
+    We investigate whether neutron star–black hole mergers and fast-merging binary neutron star systems can explain the observed r-process enrichment in the Milky Way. By combining gravitational-wave, gamma-ray burst, pulsar, and stellar abundance data, we show that these merger channels cannot by themselves account for the Galactic r-process budget, highlighting the need for additional, non-merger production pathways.. 
+
+- authors: "X.-X. Kou; M. Saleem; V. Mandic; C. Talbot; E. Thrane"
+  title: "Progress toward the detection of the gravitational-wave background from stellar-mass binary black holes: a mock data challenge"
+  journal: "Phys. Rev. D"
+  volume: "112"
+  pages: "084064"
+  year: 2025
+  url: "https://doi.org/10.1103/h9w1-94m1"
   cats: ["stochastic"]
   summary: >-
-    Mock-data challenge for the stochastic BBH background: defines datasets and evaluation metrics, compares pipelines, and maps out sensitivity and detection prospects.
+    With a Mock-data challenge, we demonstrate the ability of template-based approach for the detection of stochastic gravitational wave background from binary black hole mergers: the method is three orders of magnitude more sensitive than any conventional approach, and promises the least waiting time to the first ever detection of the astrophysical background. We resolved a number of subtle noise characterization challenges that stands in the way of identifying the astrophysical background that burried deep in the detector noise. 
 
 - authors: "R. W. Kiendrebeogo; M. Saleem; M.-A. Bizouard; A. H. Y. Chen; N. Christensen; C.-J. Chou; M. W. Coughlin; K. Janssens; S. Z. Kam; J. Koulidiati; S.-W. Yeh"
   title: "Application of Non-Linear Noise Regression in the Virgo Detector"
-  journal: "arXiv"
-  year: 2024
-  url: "https://arxiv.org/abs/2410.06220"
+  journal: "Phys. Rev. D"
+  volume: "112"
+  pages: "083053"
+  year: 2025
+  url: "https://doi.org/10.1103/hwnc-r7yy"
   cats: ["ml-gw"]
   summary: >-
     Demonstrates non-linear (ML-based) noise regression in Virgo, quantifying noise subtraction and its impact on strain sensitivity and astrophysical searches.
+
+- authors: "Parthapratim Mahapatra, Sayantani Datta, Ish Gupta, Poulami Dutta Roy, Muhammed Saleem, Purnima Narayan, Soumen Roy, Jan Steinhoff, Deirdre Shoemaker, Alan J. Weinstein, Anuradha Gupta, B. S. Sathyaprakash, K. G. Arun"
+  title: "Confronting General Relativity with Principal Component Analysis: Simulations and Results from GWTC-3 Events"
+  journal: "Phys. Rev. D"
+  volume: "(in press)"
+  pages: "xxxxxx"
+  year: 2025
+  url: "https://arxiv.org/abs/2508.06862"
+  cats: ["strong-gravity"]
+  summary: >-
+    We present a Principal Component Analysis–based framework for testing general relativity (GR) with gravitational-wave signals from compact binary coalescences. Using both simulated and real LIGO–Virgo events, we show that this multiparameter approach can robustly identify potential deviations from GR while accounting for physical effects such as orbital eccentricity, yielding results consistent with GR and demonstrating readiness for application to future observing runs. 
+
 
 - authors: "C. Reissel; S. Soni; M. Saleem; M. Coughlin; P. Harris; E. Katsavounidis"
   title: "Coherence DeepClean: Toward autonomous denoising of gravitational-wave detector data"
