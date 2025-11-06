@@ -32,10 +32,10 @@
 - authors: "Parthapratim Mahapatra, Sayantani Datta, Ish Gupta, Poulami Dutta Roy, Muhammed Saleem, Purnima Narayan, Soumen Roy, Jan Steinhoff, Deirdre Shoemaker, Alan J. Weinstein, Anuradha Gupta, B. S. Sathyaprakash, K. G. Arun"
   title: "Confronting General Relativity with Principal Component Analysis: Simulations and Results from GWTC-3 Events"
   journal: "Phys. Rev. D"
-  volume: "(in press)"
-  pages: "xxxxxx"
+  volume: "112"
+  pages: "104007"
   year: 2025
-  url: "https://arxiv.org/abs/2508.06862"
+  url: "https://doi.org/10.1103/c1sj-jc4v"
   cats: ["strong-gravity"]
   summary: >-
     We present a Principal Component Analysis–based framework for testing general relativity (GR) with gravitational-wave signals from compact binary coalescences. Using both simulated and real LIGO–Virgo events, we show that this multiparameter approach can robustly identify potential deviations from GR while accounting for physical effects such as orbital eccentricity, yielding results consistent with GR and demonstrating readiness for application to future observing runs. 
